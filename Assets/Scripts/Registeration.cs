@@ -46,11 +46,12 @@ public class Registeration : MonoBehaviour
                 Debug.Log("User created succesfully!");
                 UnityEngine.SceneManagement.SceneManager.LoadScene("Hijab Materials");
             }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+            }
         }
     }
+    
 
-    public void VerifyInputs()
-    {
-        submitButton.interactable = (nameField.text.Length >=5 && passwordField.text.Length >=6);
-    }
 }

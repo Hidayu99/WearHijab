@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour
 {
@@ -50,9 +51,6 @@ public class Login : MonoBehaviour
 }
 
 
-    public void VerifyInputs()
-    {
-        submitButton.interactable = (nameField.text.Length >= 5 && passwordField.text.Length >= 6);
-    }
+  
 
 }
